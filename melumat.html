@@ -1,4 +1,4 @@
-html>
+<html>
 <head>
 <title>Məlumat</title>
 </head>
@@ -6,7 +6,13 @@ html>
 <img id="bayraq" src="#"/>
 <h1 id="ad">Tapılmadı</h1>
 <script>
-document.getElementById("bayraq").src="https://i.ibb.co/qd2NBwz/dB9Dkp.jpg"
+var sa=window.location.split("?")[1]
+eval(sa)
+var data={
+  "masallı":{
+    "ad":"Masallı",
+    "bayraq":"https://i.ibb.co/qd2NBwz/dB9Dkp.jpg"}}
+document.getElementById("bayraq").src=data[id].bayraq
 </script>
 </body>
 </html>
